@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react';
 import { ref, onValue } from 'firebase/database';
 import { ref as storageRef, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { collection, addDoc } from 'firebase/firestore';
-import { auth, db, rtdb, storage } from '../firebase';
+import { auth, db, rtdb, storage } from '../../firebase';
 import { useNavigate } from 'react-router-dom';
-import SearchableSelect from './SearchableSelect'; // Import the new component
+import SearchableSelect from '../../components/shared/SearchableSelect'; // Import the new component
 import './UploadView.css';
 
 const UploadView = () => {
@@ -61,6 +61,7 @@ const UploadView = () => {
         'File upload': fileUrl,
         Status: 'Đang chờ',
         'Thời gian': new Date(),
+        'Name': user.displayName, // Add this field to save the name of the user who collected the data
       });
 
       setNotification('Upload successful! Redirecting to dashboard...');
