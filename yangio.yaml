@@ -1,0 +1,24 @@
+slug: dh23vt-opur
+name: DH23VT OPUR
+tagline: Phiên bản cũ của cổng thông tin DH23VT
+url: https://github.com/thangvt-food/DH23VT-opur
+status: archived
+visibility: private
+description: Bản cũ của web DH23VT dùng React + Firebase, giữ lại để tham khảo.
+tags:
+  - lớp-học
+  - lưu-trữ
+  - firebase
+category: learning
+tech:
+  - react
+  - vite
+  - firebase
+hosting: firebase-hosting
+updated: '2025-08-22'
+version: 0.0.0
+icon: 🗄️
+auth: login
+links:
+  repo: https://github.com/thangvt-food/DH23VT-opur
+notes: Repo public, bản cũ; đã thay bằng DH23VT.
